@@ -1,24 +1,307 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Hgl-i0-ZC8">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Автомобильный каталог-->
+        <scene sceneID="crJ-yg-ft7">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="iDb-H6-yM0" customClass="CarTableViewController" customModule="AutoCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZGl-hu-6mU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CarCell" rowHeight="70" id="YmT-gP-Dh0" customClass="CarTableViewCell" customModule="AutoCatalog" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YmT-gP-Dh0" id="OJx-lf-4Iw">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZz-75-OoE">
+                                            <rect key="frame" x="16" y="11" width="31" height="23.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFk-gh-KrR">
+                                            <rect key="frame" x="71" y="11" width="31" height="23.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUc-MQ-L9A">
+                                            <rect key="frame" x="16" y="38.5" width="31" height="16.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djw-e5-wQb">
+                                            <rect key="frame" x="265" y="11" width="31" height="47.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osT-jK-Xng">
+                                            <rect key="frame" x="71" y="38.5" width="31" height="16.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="YFk-gh-KrR" secondAttribute="centerY" constant="12" id="5rT-so-fWR"/>
+                                        <constraint firstItem="osT-jK-Xng" firstAttribute="centerY" secondItem="OJx-lf-4Iw" secondAttribute="centerY" constant="12" id="8NJ-s5-Hfe"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="osT-jK-Xng" secondAttribute="bottom" constant="4" id="Cuj-Ko-47o"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Djw-e5-wQb" secondAttribute="trailing" constant="8" id="D24-lV-Gny"/>
+                                        <constraint firstItem="cZz-75-OoE" firstAttribute="top" secondItem="OJx-lf-4Iw" secondAttribute="topMargin" id="EdK-nH-hYo"/>
+                                        <constraint firstItem="bUc-MQ-L9A" firstAttribute="centerY" secondItem="OJx-lf-4Iw" secondAttribute="centerY" constant="12" id="HbI-lI-QGq"/>
+                                        <constraint firstItem="Djw-e5-wQb" firstAttribute="centerY" secondItem="OJx-lf-4Iw" secondAttribute="centerY" id="MQq-RG-9U0"/>
+                                        <constraint firstAttribute="centerY" secondItem="cZz-75-OoE" secondAttribute="centerY" constant="12" id="Og3-b3-OE1"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="bUc-MQ-L9A" secondAttribute="bottom" constant="4" id="aXp-cn-URf"/>
+                                        <constraint firstItem="bUc-MQ-L9A" firstAttribute="leading" secondItem="OJx-lf-4Iw" secondAttribute="leadingMargin" id="ems-2a-3hp"/>
+                                        <constraint firstItem="Djw-e5-wQb" firstAttribute="top" secondItem="OJx-lf-4Iw" secondAttribute="topMargin" id="fMb-cM-3Sj"/>
+                                        <constraint firstItem="cZz-75-OoE" firstAttribute="leading" secondItem="OJx-lf-4Iw" secondAttribute="leadingMargin" id="kgt-31-Dfd"/>
+                                        <constraint firstItem="YFk-gh-KrR" firstAttribute="leading" secondItem="cZz-75-OoE" secondAttribute="trailing" constant="24" id="qac-2H-xaW"/>
+                                        <constraint firstItem="YFk-gh-KrR" firstAttribute="top" secondItem="OJx-lf-4Iw" secondAttribute="topMargin" id="s7Q-RI-6g5"/>
+                                        <constraint firstItem="osT-jK-Xng" firstAttribute="leading" secondItem="bUc-MQ-L9A" secondAttribute="trailing" constant="24" id="u1P-FN-SfZ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="carClassLabel" destination="osT-jK-Xng" id="hoA-bR-m4D"/>
+                                    <outlet property="carTypeLabel" destination="bUc-MQ-L9A" id="EkM-hY-Lhc"/>
+                                    <outlet property="manufacturerLabel" destination="cZz-75-OoE" id="X0K-PF-6x8"/>
+                                    <outlet property="modelLabel" destination="YFk-gh-KrR" id="Etm-Rc-bvq"/>
+                                    <outlet property="yearLabel" destination="Djw-e5-wQb" id="9nU-Gn-0cD"/>
+                                    <segue destination="Zwk-jv-8CI" kind="show" identifier="EditSegue" id="lbA-5A-kez"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iDb-H6-yM0" id="Pb9-RO-dah"/>
+                            <outlet property="delegate" destination="iDb-H6-yM0" id="bWw-7U-TEd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Автомобильный каталог" id="JEN-tv-0R6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Cj-lG-xlG">
+                            <connections>
+                                <segue destination="Zwk-jv-8CI" kind="show" identifier="AddSegue" id="7Vs-ni-pYU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eK-Xf-9TJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="727.5" y="-7.394366197183099"/>
+        </scene>
+        <!--Данные об авто-->
+        <scene sceneID="aIs-gB-QbH">
+            <objects>
+                <tableViewController id="Zwk-jv-8CI" customClass="AddEditTableViewController" customModule="AutoCatalog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7a2-xa-RU0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection headerTitle="Производитель" id="94B-Ye-q0O">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="mGa-Qz-iUX">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mGa-Qz-iUX" id="KGw-3P-rVy">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите производителя" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X4T-Ct-rf5">
+                                                    <rect key="frame" x="4" y="4" width="312" height="35.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="Zwk-jv-8CI" eventType="editingChanged" id="0JP-jK-tl7"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="X4T-Ct-rf5" firstAttribute="leading" secondItem="KGw-3P-rVy" secondAttribute="leading" constant="4" id="MHj-Mw-S60"/>
+                                                <constraint firstAttribute="trailing" secondItem="X4T-Ct-rf5" secondAttribute="trailing" constant="4" id="XMf-zB-Wqu"/>
+                                                <constraint firstAttribute="bottom" secondItem="X4T-Ct-rf5" secondAttribute="bottom" constant="4" id="bzV-Zq-2bl"/>
+                                                <constraint firstItem="X4T-Ct-rf5" firstAttribute="top" secondItem="KGw-3P-rVy" secondAttribute="top" constant="4" id="q2f-Up-z3A"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Модель" id="ZOW-F3-8Jf">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="6oQ-c7-Fru">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6oQ-c7-Fru" id="l2E-Wb-q6t">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите модель" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ArY-EM-A0l">
+                                                    <rect key="frame" x="4" y="4" width="312" height="35.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="Zwk-jv-8CI" eventType="editingChanged" id="95b-zG-dtK"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="ArY-EM-A0l" secondAttribute="trailing" constant="4" id="VJ2-HR-OHf"/>
+                                                <constraint firstAttribute="bottom" secondItem="ArY-EM-A0l" secondAttribute="bottom" constant="4" id="XxZ-rq-qxl"/>
+                                                <constraint firstItem="ArY-EM-A0l" firstAttribute="top" secondItem="l2E-Wb-q6t" secondAttribute="top" constant="4" id="gAh-sS-R5E"/>
+                                                <constraint firstItem="ArY-EM-A0l" firstAttribute="leading" secondItem="l2E-Wb-q6t" secondAttribute="leading" constant="4" id="xfi-wh-AOv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Тип кузова" id="bcs-B7-jvw">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="n23-0w-z1q">
+                                        <rect key="frame" x="0.0" y="172" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n23-0w-z1q" id="ScY-BJ-DBt">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите тип кузова" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Iq-VP-fRi">
+                                                    <rect key="frame" x="4" y="4" width="312" height="35.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="carTypeTapped" destination="Zwk-jv-8CI" eventType="editingDidBegin" id="nip-KV-teT"/>
+                                                        <action selector="textEditingChanged:" destination="Zwk-jv-8CI" eventType="editingChanged" id="1yk-IZ-vCh"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="4Iq-VP-fRi" secondAttribute="bottom" constant="4" id="4ld-bu-zBh"/>
+                                                <constraint firstItem="4Iq-VP-fRi" firstAttribute="top" secondItem="ScY-BJ-DBt" secondAttribute="top" constant="4" id="bpH-Lg-r8s"/>
+                                                <constraint firstAttribute="trailing" secondItem="4Iq-VP-fRi" secondAttribute="trailing" constant="4" id="cyL-fK-39m"/>
+                                                <constraint firstItem="4Iq-VP-fRi" firstAttribute="leading" secondItem="ScY-BJ-DBt" secondAttribute="leading" constant="4" id="laD-GL-bMR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Класс авто" id="cOW-x8-3My">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kPg-jH-wOe">
+                                        <rect key="frame" x="0.0" y="244" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kPg-jH-wOe" id="mwh-Xh-Pnl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Выберите класс авто" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oxs-Gb-dIj">
+                                                    <rect key="frame" x="4" y="4" width="312" height="35.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="carClassTapped" destination="Zwk-jv-8CI" eventType="editingDidBegin" id="307-dg-gyI"/>
+                                                        <action selector="textEditingChanged:" destination="Zwk-jv-8CI" eventType="editingChanged" id="qJ4-MN-Rbb"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oxs-Gb-dIj" firstAttribute="top" secondItem="mwh-Xh-Pnl" secondAttribute="top" constant="4" id="ahZ-92-O7y"/>
+                                                <constraint firstItem="oxs-Gb-dIj" firstAttribute="leading" secondItem="mwh-Xh-Pnl" secondAttribute="leading" constant="4" id="jDh-ZB-0X9"/>
+                                                <constraint firstAttribute="bottom" secondItem="oxs-Gb-dIj" secondAttribute="bottom" constant="4" id="uYg-UP-Am1"/>
+                                                <constraint firstAttribute="trailing" secondItem="oxs-Gb-dIj" secondAttribute="trailing" constant="4" id="xFr-pW-CSz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Год выпуска" id="zSG-gE-KLN">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bwM-is-Ed7">
+                                        <rect key="frame" x="0.0" y="316" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bwM-is-Ed7" id="f6i-cc-YXM">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VeC-nb-sRn">
+                                                    <rect key="frame" x="4" y="4" width="312" height="35.5"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                                    <connections>
+                                                        <action selector="textEditingChanged:" destination="Zwk-jv-8CI" eventType="editingChanged" id="4Ij-tF-YjC"/>
+                                                    </connections>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="VeC-nb-sRn" secondAttribute="trailing" constant="4" id="Od1-vx-vH3"/>
+                                                <constraint firstItem="VeC-nb-sRn" firstAttribute="top" secondItem="f6i-cc-YXM" secondAttribute="top" constant="4" id="SwX-zt-o7n"/>
+                                                <constraint firstAttribute="bottom" secondItem="VeC-nb-sRn" secondAttribute="bottom" constant="4" id="TRR-YP-U6j"/>
+                                                <constraint firstItem="VeC-nb-sRn" firstAttribute="leading" secondItem="f6i-cc-YXM" secondAttribute="leading" constant="4" id="YwK-Nu-Mgx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Zwk-jv-8CI" id="sgc-bz-XgC"/>
+                            <outlet property="delegate" destination="Zwk-jv-8CI" id="iBO-AV-Gvk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Данные об авто" id="YGD-US-5ea">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ySa-df-kv5">
+                            <connections>
+                                <segue destination="0e5-jN-UjK" kind="unwind" identifier="SaveUnwind" unwindAction="unwindFromAddEditTVCWithUnwindSegue:" id="IJ6-bc-uqu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="carClassTextField" destination="oxs-Gb-dIj" id="l2Q-G3-ejm"/>
+                        <outlet property="carTypeTextField" destination="4Iq-VP-fRi" id="aps-aQ-d0S"/>
+                        <outlet property="manufacturerTextField" destination="X4T-Ct-rf5" id="h7b-Oi-sTb"/>
+                        <outlet property="modelTextField" destination="ArY-EM-A0l" id="aoe-jG-e5l"/>
+                        <outlet property="saveButton" destination="ySa-df-kv5" id="Fot-fd-VrX"/>
+                        <outlet property="yearTextField" destination="VeC-nb-sRn" id="Xbb-DW-zRl"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MUg-Eo-9KJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0e5-jN-UjK" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1543" y="-11"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AyJ-K1-epv">
+            <objects>
+                <navigationController id="Hgl-i0-ZC8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xpx-78-LIM">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iDb-H6-yM0" kind="relationship" relationship="rootViewController" id="zqv-wC-GPH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjx-Xq-oC8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="-7"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lbA-5A-kez"/>
+    </inferredMetricsTieBreakers>
 </document>

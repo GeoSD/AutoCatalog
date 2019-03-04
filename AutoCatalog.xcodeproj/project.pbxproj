@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662718BF222CF874009CF7E3 /* AddEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662718BE222CF874009CF7E3 /* AddEditTableViewController.swift */; };
+		662718C3222D1E3F009CF7E3 /* Extension+UIToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662718C2222D1E3F009CF7E3 /* Extension+UIToolBar.swift */; };
 		66C5F1D82226EB76004F1810 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5F1D72226EB76004F1810 /* AppDelegate.swift */; };
-		66C5F1DA2226EB76004F1810 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5F1D92226EB76004F1810 /* ViewController.swift */; };
 		66C5F1DD2226EB76004F1810 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C5F1DB2226EB76004F1810 /* Main.storyboard */; };
 		66C5F1DF2226EB7A004F1810 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66C5F1DE2226EB7A004F1810 /* Assets.xcassets */; };
 		66C5F1E22226EB7A004F1810 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66C5F1E02226EB7A004F1810 /* LaunchScreen.storyboard */; };
+		66C5F1EA2226ED29004F1810 /* CarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5F1E92226ED29004F1810 /* CarManager.swift */; };
+		66C5F1EC22299FF8004F1810 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5F1EB22299FF8004F1810 /* Enums.swift */; };
+		66C5F1EE2229A04E004F1810 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5F1ED2229A04E004F1810 /* Car.swift */; };
+		66C5F1F02229A300004F1810 /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5F1EF2229A300004F1810 /* CarTableViewCell.swift */; };
+		66C5F1F4222A8DDA004F1810 /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C5F1F3222A8DD9004F1810 /* CarTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		662718BE222CF874009CF7E3 /* AddEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditTableViewController.swift; sourceTree = "<group>"; };
+		662718C2222D1E3F009CF7E3 /* Extension+UIToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIToolBar.swift"; sourceTree = "<group>"; };
 		66C5F1D42226EB76004F1810 /* AutoCatalog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoCatalog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66C5F1D72226EB76004F1810 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		66C5F1D92226EB76004F1810 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		66C5F1DC2226EB76004F1810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		66C5F1DE2226EB7A004F1810 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66C5F1E12226EB7A004F1810 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66C5F1E32226EB7A004F1810 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66C5F1E92226ED29004F1810 /* CarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarManager.swift; sourceTree = "<group>"; };
+		66C5F1EB22299FF8004F1810 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		66C5F1ED2229A04E004F1810 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		66C5F1EF2229A300004F1810 /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
+		66C5F1F3222A8DD9004F1810 /* CarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				66C5F1D72226EB76004F1810 /* AppDelegate.swift */,
-				66C5F1D92226EB76004F1810 /* ViewController.swift */,
 				66C5F1DB2226EB76004F1810 /* Main.storyboard */,
+				66C5F1EF2229A300004F1810 /* CarTableViewCell.swift */,
+				66C5F1F3222A8DD9004F1810 /* CarTableViewController.swift */,
+				662718BE222CF874009CF7E3 /* AddEditTableViewController.swift */,
+				662718C2222D1E3F009CF7E3 /* Extension+UIToolBar.swift */,
+				66C5F1E92226ED29004F1810 /* CarManager.swift */,
+				66C5F1ED2229A04E004F1810 /* Car.swift */,
+				66C5F1EB22299FF8004F1810 /* Enums.swift */,
 				66C5F1DE2226EB7A004F1810 /* Assets.xcassets */,
 				66C5F1E02226EB7A004F1810 /* LaunchScreen.storyboard */,
 				66C5F1E32226EB7A004F1810 /* Info.plist */,
@@ -135,8 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66C5F1DA2226EB76004F1810 /* ViewController.swift in Sources */,
+				66C5F1EA2226ED29004F1810 /* CarManager.swift in Sources */,
+				66C5F1EC22299FF8004F1810 /* Enums.swift in Sources */,
+				66C5F1EE2229A04E004F1810 /* Car.swift in Sources */,
 				66C5F1D82226EB76004F1810 /* AppDelegate.swift in Sources */,
+				66C5F1F4222A8DDA004F1810 /* CarTableViewController.swift in Sources */,
+				662718C3222D1E3F009CF7E3 /* Extension+UIToolBar.swift in Sources */,
+				662718BF222CF874009CF7E3 /* AddEditTableViewController.swift in Sources */,
+				66C5F1F02229A300004F1810 /* CarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
